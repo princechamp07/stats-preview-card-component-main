@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      background-color: hsl(233, 47%, 7%);
+    }
+
+    .main{
+      top:50%;
+      left:50%;
+      width: 1118px;
+      height: 446px;
+      position: absolute;
+      display: flex;
+      transform: translate(-50%,-50%);
+      
+    }
+
+    .flex1{
+      background-color: hsl(244, 38%, 16%);
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .flex2{
+      background-color:  hsl(277, 89%, 40%);
+      opacity: .9;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .flex2 img{
+      opacity: .5;
+      position: relative;
+      z-index: -1;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    header{
+      font-size: 35px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      margin-left: 83px;
+      color: hsl(0, 0%, 100%);
+      margin-top: 60px;
+      padding-bottom: 35px;
+    }
+
+    .head{
+      color: blueviolet;
+      margin-left: 72px;
+      margin-top: -43px;
+    }
+
+    .head1{
+      margin-left: 219px;
+      margin-top: -43px;
+    }
+
+    p{
+      font-size: 15px;
+      color:hsla(0, 0%, 100%, 0.75);
+      margin-left: 83px;
+      padding-right: 85px;
+      font-weight: 400;
+    }
+
+    .stats{
+      font-size: 30px;
+      display: flex;
+      padding: 20px 60px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .stats p{
+      margin-left: -0px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    @media only screen and (max-width:618px){
+
+      .main{
+        width: 375px;
+        height: 550px;
+        margin-top:50%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column-reverse;
+        
+      }
+
+      img{
+        border-bottom-right-radius: 10px;
+        width:375px;
+        border-top-left-radius: 10px;
+        margin-bottom: -4px;
+        
+      }
+
+      .stats{
+        flex-direction: column;
+        padding: 0 40%;
+      }
+
+      header{
+        margin-top: 20px;
+        margin-left: 0px;
+        padding-left: 50px ;
+        
+      }
+
+      .head1{
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-right: 20px;
+      }
+        .flex1{
+          border-radius: 0;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius:10px ;
+        }
+        .flex2{
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+        }
+
+        .para{
+          text-align: center;
+          margin-top:-20px;
+          padding-bottom: 10px;
+        }
+
+      }
+
+  </style>
+</head>
+<body>
+  <div class="main">
+  <div class="flex1">
+   <header>Get <div class="head">insights</div> <div class="head1">that help</div> your business grow.</header> 
+
+   <section>
+    <div class="para">
+  <p>
+  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.</p></div>
+
+  <div class="stats">
+  <div class="st">10k+<br> <p>companies</p></div>
+  <div class="st1">314 <br><p>templates</p> </div>
+  <div class="st2">12M+ <br><p>queries</p> </div>
+</div>
+</section>
+</div>
+<div class="flex2">
+  <img src="images/image-header-desktop.jpg" alt="">
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
